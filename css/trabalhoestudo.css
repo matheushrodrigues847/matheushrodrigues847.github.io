@@ -1,0 +1,50 @@
+.titulo-trabalho{
+    font-size: 2em;
+    padding-bottom: 1.2em;
+}
+.bloco-trabalhos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bloco-trabalho{
+    width: 30%;
+    padding: 1.5em 0;
+}
+.bloco-trabalho p{
+    text-align: center;
+    line-height: 1.5;
+}
+.imagem-trabalho{
+    width: 100%;
+}
+.imagem-trabalho-bug{
+    width: 100%;
+}
+@media(max-width:770px){
+    
+    .bloco-trabalhos{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .bloco-trabalho{
+        width: 40%;
+    }
+}
+@media(max-width:470px){
+    .titulo-trabalho{
+        font-size: 1.3em;
+    }
+    .bloco-trabalhos{
+        flex-direction: column;
+        
+    }
+    .bloco-trabalho{
+        width: 80%;
+    }
+    .bloco-trabalho p{
+        margin-top: 0.3em;
+    }
+}

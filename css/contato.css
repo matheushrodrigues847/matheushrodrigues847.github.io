@@ -1,0 +1,47 @@
+.titulo-contato{
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+.bloco-contatos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 65vh;
+}
+.bloco-contato{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    font-size: 1.2em;
+}
+.bloco-contato .imagem-contato{
+    width: 10%;
+    padding-right: 0.5em;
+}
+.bloco-contato a{
+    text-decoration: none;
+    color: #000000;
+}
+@media(max-width:630px){
+    .bloco-contatos{
+        justify-content: center;
+
+    }
+    .bloco-contato{
+        width: 60%;
+    }
+}
+@media(max-width:430px){
+    .titulo-contato{
+        font-size: 1.3em;
+    }
+    .bloco-contato{
+        width: 90%;
+    }
+}
+@media(max-width:380px){
+    .bloco-contatos{
+        justify-content: start;
+    }
+}
