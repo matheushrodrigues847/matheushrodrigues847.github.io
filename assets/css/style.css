@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.principal{
+    display: flex;
+    height: 100vh;
+
+    color: #ffffff;
+}
+
+.principal__menu{
+    min-width: 270px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.area__cliente{
+    height: 140px;
+    background-color:chartreuse;
+    padding: 0 1.2rem;
+
+    background-image: url("../img/fundoLake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    max-width: 100%;
+    
+    position: relative;
+}
+.area__photo{
+   height: 55%;
+   display: flex;
+   align-items: flex-end;
+   margin-bottom: .5rem;
+}
+.area__info{
+    z-index: 10;
+
+    filter: drop-shadow(2px 4px 6px black);
+}
+.user{
+    display: block;
+    
+    width: 2.375rem;
+    height: 2.375rem;
+    
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    background-color: #000;
+
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icone--user{
+    background-image: url("../img/icones/userIcon.svg");
+}
+.info h1{
+    margin-bottom: .3rem;
+
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+.menu__topics{
+    padding: 1.7rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+
+    background-color: #232C36;
+
+    flex: 1;
+
+    height: calc(100vh - 140px);
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.menu__topics h2{
+    margin-left: 1rem;
+    margin-bottom: .8rem;
+}
+.menu__topics li{
+    margin: .5rem 0;
+}
+.menu__topics li a{
+    text-decoration: none;
+    list-style: none;
+}
+.menu__active{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 2.3rem;
+    padding: 0 .8rem;
+    width: 100%;
+
+    color: inherit;
+
+    transition:.3s;
+}
+.menu__active.ativo{
+    background-color: #4F4F4F;
+    transition:.3s;
+}
+.icone{
+    display: block;
+
+    width: 1rem;
+    height: 1rem;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin: 0 .1rem;
+}
+.icone--arrow{
+    background-image: url('../img/icones/expand_more_white_24dp.svg');
+}
+.icone--less{
+    background-image: url('../img/icones/expand_less_white_24dp.svg');
+}
+.icone--add{
+    background-image: url('../img/icones/add.svg');
+}
+.icone-relatorio{
+    background-image: url('../img/icones/relatorio.svg');
+}
+.icone--movimentacao{
+    background-image: url('../img/icones/movimentacao.svg');
+}
+.icone--fix{
+    background-image: url('../img/icones/fix.svg');
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.options{
+    display: none;
+
+    padding: 1rem 0;
+    margin-left: 1rem;
+
+    transition: .3s;
+}
+.options li{
+    text-decoration: none;
+    list-style: none;
+
+    margin-bottom: 1rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.options li:last-child{
+    margin-bottom: 0;
+}
+.options li a{
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+.options.ativo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   animation-name:show;
+   animation-duration: .5s;
+   transition: ease-in-out;
+}
+.principal__gestao{
+    flex: 1;
+    
+    background-image: url('../img/road-238458_1920.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #000;
+}
+
+.gestao__header{
+    height: 15%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 1rem 1.3rem;
+}
+.header__info h1{
+    margin-bottom: 1rem;
+    
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.info--data{
+    display: flex;
+}
+
+.gestao__main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gestao__info{
+    background-color: #000;
+    opacity: .5;
+    
+    color: #ffffff;
+
+    max-width: 30%;
+    width: 200px;
+    height: 200px;
+
+    margin-bottom: 1rem;
+}
