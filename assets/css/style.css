@@ -30,11 +30,13 @@
     background-repeat: no-repeat;
 
     max-width: 100%;
-    
-    position: relative;
+}
+.area__botaoMenu{
+    display: flex;
+    justify-content: flex-end;
 }
 .area__photo{
-   height: 55%;
+   height: 50%;
    display: flex;
    align-items: flex-end;
    margin-bottom: .5rem;
@@ -83,7 +85,7 @@
     overflow: scroll;
 }
 ::-webkit-scrollbar {
-    width: 0px;
+   display: none;
 }
 .menu__topics h2{
     margin-left: 1rem;
@@ -123,6 +125,32 @@
     background-position: center;
 
     margin: 0 .1rem;
+}
+.icone:hover{
+    cursor: pointer;
+    
+}
+.icone--menu{
+    background-image: url('../img/icones/arrowMenuFechar.svg');
+    margin-top: 1rem;
+    
+}
+.icone--menuOption{
+    background-color: #ffffff;
+    border-radius: 50%;
+    background-size: 1.3rem;
+    background-size: 1.3rem;
+    width: 2.7rem;
+    height: 2.7rem;
+
+    display: none;
+}
+.icone--menuAbrir{
+    background-image: url('../img/icones/arrowMenuAbrir.svg');
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+    border: 2px solid #000;
 }
 .icone--arrow{
     background-image: url('../img/icones/expand_more_white_24dp.svg');
@@ -226,6 +254,8 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    height: calc(100vh - 173px);
+    overflow: scroll;
 }
 .gestao__info{
     background-color: #000;
@@ -233,9 +263,63 @@
     
     color: #ffffff;
 
-    max-width: 30%;
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    min-width: 200px;
+    min-height: 200px;
 
     margin-bottom: 1rem;
+}
+
+@media(max-width: 930px){
+    .principal__menu{
+        position: fixed;
+        top: 0;
+        left: -90%;
+        bottom: 0;
+
+        z-index: 1;
+        transition: left 500ms ease-out;
+    }
+    .menu__ativo .principal__menu{
+        left: 0;
+    }
+    .menu__ativo::after{
+        content: '';
+        display: block;
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .icone--menuOption{
+        display: block;
+    }
+    .area__photo{
+        height: 15%;
+        
+     }
+    .gestao__main{
+        justify-content: center;
+    }
+    .gestao__info{
+        width: 45%;
+        margin-right: 1rem;
+    }
+    .gestao__info:nth-child(2n){
+        margin-right: 0;
+    }
+}
+@media(max-width: 660px){
+    .gestao__info{
+        width: 45%;
+        
+    }
+}
+@media(max-width: 500px){
+    .gestao__info{
+        width: 90%;
+        margin-right: 0;
+    }
 }
