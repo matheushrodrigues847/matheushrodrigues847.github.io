@@ -221,6 +221,7 @@
 }
 .principal__gestao{
     flex: 1;
+    min-height: 100vh;
     
     background-image: url('../img/road-238458_1920.jpg');
     background-position: center;
@@ -254,7 +255,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: calc(100vh - 173px);
+    height: calc(100vh - 250px);
     overflow: scroll;
 }
 .gestao__info{
@@ -264,6 +265,7 @@
     color: #ffffff;
 
     width: 30%;
+    margin: 0 auto;
     min-width: 200px;
     min-height: 200px;
 
@@ -280,6 +282,7 @@
         z-index: 1;
         transition: left 500ms ease-out;
     }
+    
     .menu__ativo .principal__menu{
         left: 0;
     }
@@ -292,6 +295,9 @@
         left: 0;
         right: 0;
         bottom: 0;
+
+        background: rgb(0,1,0);
+        opacity: .5;
     }
     .icone--menuOption{
         display: block;
@@ -299,17 +305,13 @@
     .area__photo{
         height: 15%;
         
-     }
-    .gestao__main{
-        justify-content: center;
     }
+   
     .gestao__info{
         width: 45%;
-        margin-right: 1rem;
+        
     }
-    .gestao__info:nth-child(2n){
-        margin-right: 0;
-    }
+    
 }
 @media(max-width: 660px){
     .gestao__info{
@@ -320,6 +322,6 @@
 @media(max-width: 500px){
     .gestao__info{
         width: 90%;
-        margin-right: 0;
+        
     }
 }

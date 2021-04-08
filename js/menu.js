@@ -16,14 +16,25 @@ function menuOptions(){
 }
 menuOptions();
 
-const botaoMenuAbrir = document.querySelector('.icone--abrirMenu');
+const option = ()=>{
+    const botaoMenuAbrir = document.querySelector('.icone--abrirMenu');
 
-botaoMenuAbrir.addEventListener('click', ()=>{
-    document.documentElement.classList.add('menu__ativo');
-})
+    botaoMenuAbrir.addEventListener('click', () => {
+        document.documentElement.classList.add('menu__ativo');
+        menuAfter()
+    })
 
-const botaoMenuFechar = document.querySelector('.icone--fecharMenu');
+    const botaoMenuFechar = document.querySelector('.icone--fecharMenu');
 
-botaoMenuFechar.addEventListener('click',()=>{
-    document.documentElement.classList.remove('menu__ativo');
-})
+    botaoMenuFechar.addEventListener('click', () => {
+        document.documentElement.classList.remove('menu__ativo');
+    })
+}
+option();
+
+const menuAfter = ()=>{
+    const menuAfter = document.querySelector('.menu__ativo');
+    menuAfter.addEventListener('click',(event)=>{
+        if(event.target == document.documentElement) menuAfter.classList.remove('menu__ativo')
+    })
+}
