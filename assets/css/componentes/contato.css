@@ -1,0 +1,92 @@
+.bloco--contato{
+    background-color: #fff;
+
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 4rem auto 0 auto;
+
+    border-radius: 50px 50px 0 0;
+}
+.container__contato{
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.contato__titulo h1{
+    font-size: var(--titulo);
+}
+
+.contato__conteudo{
+    margin-top: 4rem;
+}
+.info__blocos{
+    padding: 2rem 0;
+}
+
+.info__bloco h3, .linkedin__titulo{
+    font-size: 2.3rem;
+}
+
+.info__bloco:first-child{
+    margin-bottom: 2rem;
+}
+.info__basica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info__basica span{
+    margin-right: 1rem;
+}
+
+.icone--telefone{
+    background-image: url('../../img/icones/call_black_24dp.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icone--email{
+    background-image: url('../../img/icones/email_black_24dp.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info__bloco p{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.linkedin__titulo{
+    margin-bottom: 2rem;
+}
+@media(min-width:380px){
+    .info__bloco p{
+        font-size: 2rem;
+    }
+}
+@media(min-width: 750px){
+    .conteudo__info{
+        display: flex;
+        justify-content: space-around;
+        
+        padding: 2rem 0;
+    }
+
+    .info__blocos{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .linkedin__titulo{
+        display: none;
+    }
+}
+
+@media(min-width: 1300px){
+    .conteudo__info{
+        justify-content: space-evenly;
+    }
+}

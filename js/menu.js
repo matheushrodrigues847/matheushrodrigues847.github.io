@@ -1,40 +1,43 @@
-function menuOptions(){
-    const menu = document.querySelectorAll('.menu__active');
-    menu[0].nextElementSibling.classList.add('ativo');
-    menu[0].classList.add('ativo');
+const menuInit = ()=>{
+    const menuAbrir = document.querySelector('.icone--menu--abrir');
+    const menuFechar = document.querySelector('.icone--menu--fechar');
 
-    function initTab(event) {
-        event.preventDefault();
-
-        event.currentTarget.classList.toggle('ativo')
-        event.currentTarget.nextElementSibling.classList.toggle('ativo')
-
+    function menu(){
+        document.documentElement.classList.toggle('ativo');
     }
-    menu.forEach(item => {
-        item.addEventListener('click', initTab)
-    });
-}
-menuOptions();
 
-const option = ()=>{
-    const botaoMenuAbrir = document.querySelector('.icone--abrirMenu');
+    menuAbrir.addEventListener('click', menu);
+    menuFechar.addEventListener('click', menu);
 
-    botaoMenuAbrir.addEventListener('click', () => {
-        document.documentElement.classList.add('menu__ativo');
-        menuAfter()
-    })
-
-    const botaoMenuFechar = document.querySelector('.icone--fecharMenu');
-
-    botaoMenuFechar.addEventListener('click', () => {
-        document.documentElement.classList.remove('menu__ativo');
+    document.documentElement.addEventListener('click',(event)=>{
+        if(event.target == document.documentElement){
+            document.documentElement.classList.remove('ativo');
+            console.log(event)
+        } 
+        
     })
 }
-option();
+menuInit();
 
-const menuAfter = ()=>{
-    const menuAfter = document.querySelector('.menu__ativo');
-    menuAfter.addEventListener('click',(event)=>{
-        if(event.target == document.documentElement) menuAfter.classList.remove('menu__ativo')
+const escrever=()=>{
+    const titulo = document.querySelector('.home__info h1');
+    const novoTitulo = "Matheus";
+    const tituloSeparado = novoTitulo.split('');
+    
+    tituloSeparado.forEach((letra,index)=>{
+        setTimeout(()=>{
+            titulo.textContent+=letra;
+        },100*index)
     })
+    
+    
+    const p = document.querySelector('.home__info p');
+    const texto = "Desenvolvedor Front-end";
+
+    setTimeout(()=>{
+        p.textContent = texto;
+        p.classList.add('bloco__ativo');
+    },700)
+    
 }
+escrever();

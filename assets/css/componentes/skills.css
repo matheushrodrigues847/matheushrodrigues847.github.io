@@ -1,0 +1,121 @@
+.bloco--skills{
+    background-color: #fff;
+    border-radius: 50px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+.container--skills{
+    padding: 3rem 0;
+}
+.skill__titulo{
+    font-size: var(--titulo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+}
+.skill__icone{
+    background-image: url('../../img/icones/rocket.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    
+    width: 4.5rem;
+    height: 4.5rem;
+    
+    margin-right: 1rem;
+}
+.skill__blocos{
+    text-align: center;
+}
+.skill__arrow{
+    display: none;
+   
+}
+.icone--arrowBack{
+    background-image: url('../../img/icones/arrow_back_ios_black_24dp.svg');
+}
+.skill__bloco{
+    margin-bottom: 3rem;
+}
+.skill__legenda{
+    font-size: 2.5rem;
+}
+.skill__porcentagem{
+    font-size: 2.2rem;
+}
+.skill__div--photo{
+    margin-bottom: 1rem;
+}
+.skill__photo{
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
+
+    border-radius: 50%;
+}
+.icone--arrowForward{
+    background-image: url('../../img/icones/arrow_forward_ios_black_24dp.svg');
+}   
+
+@media(min-width: 460px){
+    .skill__blocos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .skill__bloco{
+        width: 48%;
+    }
+}
+@media(min-width: 720px){
+    .skill__bloco{
+        width: 30%;
+    }
+}
+@media(min-width: 1024px){
+    .skill__scroll{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .skill__scroll .arrowAtivo{
+        display: initial;
+        
+    }
+    .skill__arrow:hover{
+        cursor: pointer;
+    }
+    .icone--arrowForward, .icone--arrowBack{
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .skill__blocos{
+        flex-wrap: nowrap;
+        justify-content: unset;
+
+        width: 730px;
+        
+        overflow-x: hidden;
+        
+        scroll-behavior: smooth;
+        margin: 0 2rem;
+    }
+    .skill__bloco{
+        width: 150px;
+        flex: none;
+        margin-bottom: 0;
+    }
+    
+}
+@media(min-width: 2000px){
+    .bloco--skills{
+        margin: 0 auto;
+    }
+
+    
+}

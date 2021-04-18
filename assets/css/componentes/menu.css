@@ -1,0 +1,146 @@
+.cabecario{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.bloco__menu{
+    height: 70px;
+
+    background-color: var(--preto);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.container--menu{
+    display: flex;
+}
+.menu__botao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.icone--fechar{
+    background-color: var(--preto);
+    cursor: pointer;
+    height: 70px;
+
+    width: 100%;
+    padding: 0 2rem;
+}
+.menu__botao h1{
+    color: #fff;
+    font-size: 2.3rem;
+}
+.icone{
+    display: block;
+    
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.icone--menu--abrir{
+    background-image: url('../../img/icones/menu_white.svg');
+    cursor: pointer;
+}
+.titulo__logo{
+    margin-left: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.titulo__logo h1{
+    
+    font-weight: 800;
+    font-size: 2rem;
+    color: #fff;
+
+    text-align: center;
+}
+.menu{
+    position: fixed;
+
+    background-color: var(--blue-ligth);
+
+    top: 0;
+    bottom: 0;
+    left: -190%;
+    
+
+    z-index: 1;
+
+    width: 80%;
+    max-width: 300px;
+
+    transition: left .4s ease-in-out;
+}
+.menu nav{
+    padding: 2rem;
+}
+.ativo .menu{
+    left: 0;
+}
+
+
+.icone--menu--fechar{
+    background-image: url('../../img/icones/close_white.svg');
+}
+.menu__options li{
+    list-style: none;
+
+    border-bottom: 1px solid;
+    margin-bottom: 2.5rem;
+}
+.menu__options li a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--preto);
+    
+}
+
+@media(min-width: 870px){
+    .container--menu{
+        justify-content: space-between;
+    }
+    .menu{
+        position:initial;
+    
+        background-color: var(--preto);
+    
+        width: 100%;
+        padding: 0;
+
+        max-width: fit-content;
+    }
+    .menu nav{
+        padding: 0;
+    }
+    .menu__options{
+        display: flex;
+    }
+    .menu__options li:first-child{
+        margin-left: 0;
+    }
+    .menu__options li{
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+    .menu__options li a{
+        color: #fff;
+    }
+    .menu__options li a:hover{
+        text-decoration: underline;
+        transition: .5s;
+    }
+    .icone--abrir{
+        display: none;
+    }
+    .icone--fechar{
+        display: none;
+    }
+    
+}

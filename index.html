@@ -1,130 +1,267 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
     
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/menu.css">
+    <link rel="stylesheet" href="../assets/css/componentes/home.css">
+    <link rel="stylesheet" href="../assets/css/componentes/sobre.css">
+    <link rel="stylesheet" href="../assets/css/componentes/skills.css">
+    <link rel="stylesheet" href="../assets/css/componentes/projetos.css">
+    <link rel="stylesheet" href="../assets/css/componentes/contato.css">
+    <link rel="stylesheet" href="../assets/css/componentes/rodape.css">
 </head>
-
 <body>
-    <header></header>
+    <header class="cabecario">
+        <section class="bloco__menu">
+            <div class="container container--menu">
+                <div class="menu__botao icone--abrir">
+                    <span class="icone icone--menu--abrir"></span>
+                </div>
+                <div class="titulo__logo">
+                    <h1>MATHEUS.com</h1>
+                </div>
+                
+                <div class="menu">
+                    <div class="menu__botao icone--fechar">
+                        <h1>MATHEUS.com</h1>
+                        <span class="icone icone--menu--fechar"></span>
+                    </div>
+                    <nav>
+                        <ul class="menu__options">
+                            <li class="menu__option"><a href="#home">Home</a></li>
+                            <li class="menu__option"><a href="#sobre">About me</a></li>
+                            <li class="menu__option"><a href="#skills">Skills</a></li>
+                            <li class="menu__option"><a href="#projetos">Projetos</a></li>
+                            <li class="menu__option"><a href="#contato">Contact me</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+        </section>
+    </header>
     <main>
-        <div class="principal">
-            <aside class="principal__menu">
-
-                <div class="area__cliente">
-                    <div class="area__botaoMenu">
-                        <span class="icone icone--menu icone--menuOption icone--fecharMenu"></span>
-                    </div>
-
-                    <div class="area__photo">
-                        <span class="user icone--user"></span>
-                    </div>
-                    <div class="area__info">
-                        <div class="info">
-                            <h1>Cliente</h1>
-                            <p>Developer</p>
-                        </div>
-                        <span></span>
-                    </div>
-                </div>
-                <ul class="menu__topics">
-                    <h2>Navigation</h2>
-                    <li>
-                        <a href="" class="menu__active">
-                            <span class="icone icone--add"></span>
-                            Cadastro
-                            <span class="icone icone--arrow"></span>
-                        </a>
-                        <ul class="options">
-                            <li class="option"><a href="">texto</a></li>
-                            <li class="option"><a href="">texto</a></li>
-                            <li class="option"><a href="">texto</a></li>
-                            <li class="option"><a href="">texto</a></li>
-                            <li class="option"><a href="">texto</a></li>
-                            <li class="option"><a href="">texto</a></li>
-                            <li class="option"><a href="">texto</a></li>
-                            <li class="option"><a href="">texto</a></li>
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" class="menu__active">
-                            <span class="icone icone--movimentacao"></span>
-                            Movimentação
-                            <span class="icone icone--arrow"></span>
-                        </a>
-
-                        <ul class="options">
-                            <li><a href="">texto</a></li>
-                            <li><a href="">texto</a></li>
-                            <li><a href="">texto</a></li>
-                            <li><a href="">texto</a></li>
-                            <li>
-                                <a href="" class="menu__active">
-                                    <span class="icone icone--fix"></span>
-                                    texto
-                                    <span class="icone icone--arrow"></span>
-                                </a>
-                                <ul class="options">
-                                    <li><a href="">texto</a></li>
-                                    <li><a href="">texto</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="">texto</a></li>
-                            <li><a href="">texto</a></li>
-                            <li><a href="">texto</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" class="menu__active">
-                            <span class="icone icone-relatorio"></span>
-                            Relatório
-                            <span class="icone icone--arrow"></span>
-                        </a>
-
-                        <ul class="options">
-                            <li><a href="">texto</a></li>
-                            <li><a href="">texto</a></li>
-                            <li><a href="">texto</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </aside>
-            <div class="principal__gestao">
-                <span class="icone  icone--menuOption icone--menuAbrir icone--abrirMenu"></span>
-                <div class="gestao__header">
-                    <div class="header__info">
-                        <h1>Dashboard</h1>
-                        <div class="info--data">
-                            <input class="data" type="date">
-                            <p>-</p>
-                            <input class="data" type="date">
-                        </div>
-                    </div>
-                </div>
-                <div class="gestao__main">
-
-                    <div class="gestao__info">
-                        <h1>teste</h1>
-                    </div>
-                    <div class="gestao__info"></div>
-                    <div class="gestao__info"></div>
-                    <div class="gestao__info"></div>
-                    <div class="gestao__info"></div>
-                    <div class="gestao__info"></div>
-
+        <section class="bloco--home bloco ativo" id="home">
+            <div class="container container--home">
+                <div class="home__info">
+                    
+                    <h1></h1>
+                    <p></p>
                 </div>
             </div>
-        </div>
-    </main>
-    <script src="../js/menu.js"></script>
-</body>
+        </section>
+        <section class="bloco--sobre bloco" id="sobre">
+            <div class="container container--sobre">
+                <div class="sobre__info">
+                    <div class="info__texto">
+                        <h1>About Me</h1>
+                        <div class="perfil">
+                            <div class="perfil__foto">
+                                <img src="../assets/img/perfil.png" alt="foto de rosto">
+                            </div>
+                            <dl class="info__basicas">
+                                <dt>Nome</dt>
+                                <dd>Matheus Henrique Rodrigues</dd>
+                                <dt>Nascimento</dt>
+                                <dd>20/02/1998</dd>
+                                <dt>Hobbies</dt>
+                                <dd>Codar, jogar e pescar</dd>
+                            </dl>
+                        </div>
+                        <p> 
+                            Apaixonado por tecnologias estou sempre em busca
+                            de aperfeiçoamento e treinamentos. Resolver problemas
+                            e alcançar todo o público é uma das minhas virtudes.
+                            Meu principal objetivo no momento é ingressar em uma empresa, como estagiário de 
+                            desenvolvimento em Front-End,
+                            na qual eu possa crescer profissionalmente e pessoalmente.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="bloco--skills bloco" id="skills">
+            <div class="container container--skills">
+                <div class="skill__titulo">
+                    <span class="icone skill__icone"></span>
+                    <h1>Skills</h1>
+                </div>
+                <div class="skill__scroll">
+                    <div class="skill__arrow ">
+                        <span class="icone icone--arrowBack"></span>
+                    </div>
+                    <div class="skill__blocos">
+                        
+                        <div class="skill__bloco">
+                            <div class="skill__div--photo">
+                                <img src="../assets/img/js.png" alt="javascript" class="skill__photo">
+                            </div>
+                            <h1 class="skill__legenda">Javascript</h1>
+                            <p class="skill__porcentagem">70%</p>
+                        </div>
+                        <div class="skill__bloco">
+                            <div class="skill__div--photo">
+                                <img src="../assets/img/css.png" alt="css" class="skill__photo">
+                            </div>
+                            <h1 class="skill__legenda">CSS3</h1>
+                            <p class="skill__porcentagem">85%</p>
+                        </div>
+                        <div class="skill__bloco">
+                            <div class="skill__div--photo">
+                                <img src="../assets/img/html.png" alt="html" class="skill__photo">
+                            </div>
+                            <h1 class="skill__legenda">HTML5</h1>
+                            <p class="skill__porcentagem">85%</p>
+                        </div>
+                        <div class="skill__bloco">
+                            <div class="skill__div--photo">
+                                <img src="../assets/img/node.png" alt="node" class="skill__photo">
+                            </div>
+                            <h1 class="skill__legenda">NodeJs</h1>
+                            <p class="skill__porcentagem">10%</p>
+                        </div>
+                        <div class="skill__bloco">
+                            <div class="skill__div--photo">
+                                <img src="../assets/img/react.png" alt="react" class="skill__photo">
+                            </div>
+                            <h1 class="skill__legenda">React</h1>
+                            <p class="skill__porcentagem">15%</p>
+                        </div>
+                        <div class="skill__bloco">
+                            <div class="skill__div--photo">
+                                <img src="../assets/img/sass.png" alt="sass" class="skill__photo">
+                            </div>
+                            <h1 class="skill__legenda">Sass</h1>
+                            <p class="skill__porcentagem">12%</p>
+                        </div>
+                        <div class="skill__bloco">
+                            <div class="skill__div--photo">
+                                <img src="../assets/img/php.png" alt="php" class="skill__photo">
+                            </div>
+                            <h1 class="skill__legenda">PHP</h1>
+                            <p class="skill__porcentagem">10%</p>
+                        </div>
+                        <div class="skill__bloco">
+                            <div class="skill__div--photo">
+                                <img src="../assets/img/java.png" alt="java" class="skill__photo">
+                            </div>
+                            <h1 class="skill__legenda">Java</h1>
+                            <p class="skill__porcentagem">25%</p>
+                        </div>
+                        
+                    </div>
+                    <div class="skill__arrow arrowAtivo">
+                        <span class="icone icone--arrowForward"></span>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <section class="bloco--projetos bloco" id="projetos">
+            <div class="container container__projetos">
+                <div class="projeto__titulo">
+                    <h1>Projetos</h1>
+                </div>
+                <div class="projeto__blocos">
+                    <div class="projeto__bloco">
+                        <video controls src="../assets/video/Doguito Petshop _ Clientes - Pessoal — Microsoft​ Edge 2021-04-17 20-26-19.mp4"></video>
+                        
+                        <h2 class="projeto__nome">Crud</h2>
+                        
+                        
+                        <p class="projeto__legenda">Tabela de cadastro com Js</p>
+                        <a class="projeto__link" target="_blank" href="https://github.com/matheushrodrigues847/CRUD/blob/master/admin">
+                            Link do projeto
+                        </a>
+                    </div>
+                    <div class="projeto__bloco">
+                        <video controls src="../assets/video/to.do - Pessoal — Microsoft​ Edge 2021-03-22 15-18-12.mp4"></video>
+                        
+                        <h2 class="projeto__nome">Todo React</h2>
+                          
+                        <p class="projeto__legenda">Tabela de cadastro com React</p>
+                        <a class="projeto__link" target="_blank" href="https://github.com/matheushrodrigues847/Todo-React">
+                            Link do projeto
+                        </a>
+                    </div>
+                    <div class="projeto__bloco">
+                        <video controls src="../assets/video/127.0.0.1_5500 - Pessoal — Microsoft​ Edge 2021-04-17 20-52-31.mp4"></video>
+                        
+                        <h2 class="projeto__nome">Fetch-CEP</h2>
+                        
+                        
+                        <p class="projeto__legenda">Usando API de CEP da VIACEP</p>
+                        <a class="projeto__link" target="_blank" href="https://github.com/matheushrodrigues847/fetch-CEP">
+                            Link do projeto
+                        </a>
+                    </div>
+                    <div class="projeto__bloco">
+                        <video controls src="../assets/video/index.html e mais 2 páginas - Pessoal — Microsoft​ Edge 2021-04-17 20-59-56.mp4"></video>
+                        
+                        <h2 class="projeto__nome">Posto</h2>
+                        
+                        
+                        <p class="projeto__legenda">Cálculo de combustível</p>
+                        <a class="projeto__link" target="_blank"  href="https://github.com/matheushrodrigues847/Posto">
+                            Link do projeto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bloco--contato bloco" id="contato">
+            <div class="container container__contato">
+                <div class="contato__titulo">
+                    <h1>Contact me</h1>
+                </div>
+                <div class="contato__conteudo">
+                    <div class="conteudo__info">
+                        <div class="info__blocos">
+                            <div class="info__bloco">
+                                <div class="info__basica">
+                                    <span class="icone icone--telefone"></span>
+                                    <h3>Telefone</h3>
+                                </div>
+                                <p>(34) 9 9238-4143</p>
+                            </div>
+                            <div class="info__bloco info--email">
+                                <div class="info__basica">
+                                    <span class="icone icone--email"></span>
+                                    <h3>Email</h3>
+                                </div>
+                                <p>matheusboita21@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class=" info__linkedin">
+                            <div class="linkedin__titulo">
+                                <h3>LinkedIn</h3>
+                            </div>
+                            <div class="LI-profile-badge"  data-version="v1"
+                                data-size="medium" data-locale="pt_BR" data-type="vertical"
+                                data-theme="dark" data-vanity="matheus-henrique-rodrigues-80590b181">
+                                <a class="LI-simple-link" href='https://br.linkedin.com/in/matheus-henrique-rodrigues-80590b181?trk=profile-badge'>Matheus Henrique Rodrigues</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/scrollSkill.js"></script>
+    <script src="../js/srollPagina.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</body>
 </html>
